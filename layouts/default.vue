@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 
@@ -8,7 +8,6 @@
 html {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -37,7 +36,7 @@ a:hover {
   flex-direction: column;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 0 64px;
+  padding: 0 32px;
 }
 .button--empty {
   display: inline-block;

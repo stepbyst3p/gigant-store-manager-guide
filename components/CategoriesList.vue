@@ -1,10 +1,15 @@
 <template>
   <div class="categories-list">
-    <div v-for="(category, index) in categories" v-bind:key="index" class="categories-item">
+    <div
+      v-for="(category, index) in categories"
+      v-bind:key="index"
+      class="categories-item"
+    >
       <nuxt-link
-        :to="{ path: `category/${category.id}`}"
+        :to="{ path: `category/${category.id}` }"
         class="categories-item-link"
-      >{{category.name}}</nuxt-link>
+        >{{ category.name }}</nuxt-link
+      >
     </div>
   </div>
 </template>
@@ -15,18 +20,14 @@ export default {
 };
 </script>
 
-
 <style lang="scss">
 .categories {
   &-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100vh;
+    column-count: 3;
     padding: 32px 0;
   }
   &-item {
-    margin: 8px 32px;
+    margin: 16px 8px;
     &-link {
       font-size: 18px;
     }
